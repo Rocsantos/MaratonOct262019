@@ -12,6 +12,23 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    //Código aqui amigo
+    long long n;
+    cin >> n;
+    set<long long> numeros;
+    for(long long i = 0; i < n; i++){
+        numeros.insert(i);
+    }
+    set<long long> contado;
+    while(n--){
+        long long a;
+        cin >> a;
+        contado.insert(a);
+    }
+    for(auto &item: numeros){
+        if(contado.count(item) == 0){
+            cout << item << endl;
+            return 0;
+        }
+    }
     return 0;
 }

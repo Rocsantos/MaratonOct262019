@@ -12,6 +12,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 int main(){
-    //Código aqui amigo
+    long long a, b, n;
+    cin >> a >> b >> n;
+    cout << n/a*b << endl;
     return 0;
 }
